@@ -9,6 +9,13 @@
   </head>
 
   <body>
+  	<nav>
+  		<%= form_tag do%>
+ 		    <%= text_field_tag :id %>
+		    <%= submit_tag "Search Number"%>
+		<% end %>
+
+  	</nav>
     <%= yield %>
   </body>
 </html>

@@ -1,2 +1,5 @@
-<h1>Number#index</h1>
-<p>Find me in app/views/number/index.html.erb</p>
+<ul class="columns">
+	<% 500.times do |num| %>
+		<li><%= link_to num, "/number/#{num}" %></li>
+	<% end %>
+</ul>
